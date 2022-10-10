@@ -11,8 +11,13 @@
 body {
 	font-size: 1.15em;
 }
+div {
+  max-width: 34em;
+  margin: auto;
+}
 table {
 	border-collapse: collapse;
+  margin-bottom: 10em;
 }
 caption {
 	font-size: 1.25em;
@@ -30,14 +35,16 @@ th, td {
 
 <body>
 
+<div>
 <h1>CSS text size conversion table</h1>
 <p>By point, pixel, em/rem and percent.</p>
 <p>Notes:</p>
 <ul>
-  <li>The :root font-size is 16px.</li>
-  <li>Calculated size of em and % depends on parent/ancestors.</li>
-  <li>Actual rendered size may depend on font, browser and operating system.</li>
+  <li>Assuming the :root font-size is 16px (default of browsers).</li>
+  <li>The calculated size of em and % depends on parent/ancestors.</li>
+  <li>Actual rendered size may depend on font, browser, and operating system.</li>
   <li>1 px = 0.75 point; 1 point = 1.333333 px</li>
+  <li>This data is useful for when assessing compliance with <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">WCAG SC 1.4.3 Contrast (Minimum) (Level AA)</a> which for it&apos;s purposes &quot;large text&quot; is &quot;at least 18 point or 14 point bold&quot;.</li>
 </ul>
 
 <table>
@@ -62,8 +69,8 @@ th, td {
 <tr>
 <td>7pt</td>
 <td>9px</td>
-<td>0.55em</td>
-<td>55%</td>
+<td>0.5625em</td>
+<td>56%</td>
 <td></td>
 </tr>
 <tr>
@@ -76,8 +83,8 @@ th, td {
 <tr>
 <td>8pt</td>
 <td>11px</td>
-<td>0.7em</td>
-<td>70%</td>
+<td>0.6875em</td>
+<td>69%</td>
 <td></td>
 </tr>
 <tr>
@@ -90,8 +97,8 @@ th, td {
 <tr>
 <td>10pt</td>
 <td>13px</td>
-<td>0.8em</td>
-<td>80%</td>
+<td>0.8125em</td>
+<td>81%</td>
 <td>small</td>
 </tr>
 <tr>
@@ -104,8 +111,8 @@ th, td {
 <tr>
 <td>11pt</td>
 <td>15px</td>
-<td>0.95em</td>
-<td>95%</td>
+<td>0.9375em</td>
+<td>94%</td>
 <td></td>
 </tr>
 <tr>
@@ -118,8 +125,8 @@ th, td {
 <tr>
 <td>13pt</td>
 <td>17px</td>
-<td>1.05em</td>
-<td>105%</td>
+<td>1.0625em</td>
+<td>106%</td>
 <td></td>
 </tr>
 <tr>
@@ -132,36 +139,29 @@ th, td {
 <tr>
 <td>14pt</td>
 <td>19px</td>
-<td>1.2em</td>
-<td>120%</td>
+<td>1.1875em</td>
+<td>119%</td>
 <td></td>
 </tr>
 <tr>
-<td>14.5pt</td>
+<td>15pt</td>
 <td>20px</td>
 <td>1.25em</td>
 <td>125%</td>
 <td></td>
 </tr>
 <tr>
-<td>15pt</td>
-<td>21px</td>
-<td>1.3em</td>
-<td>130%</td>
-<td></td>
-</tr>
-<tr>
 <td>16pt</td>
-<td>22px</td>
-<td>1.4em</td>
-<td>140%</td>
+<td>21px</td>
+<td>1.3125em</td>
+<td>131%</td>
 <td></td>
 </tr>
 <tr>
 <td>17pt</td>
 <td>23px</td>
-<td>1.45em</td>
-<td>145%</td>
+<td>1.4375em</td>
+<td>144%</td>
 <td></td>
 </tr>
 <tr>
@@ -173,16 +173,16 @@ th, td {
 </tr>
 <tr>
 <td>20pt</td>
-<td>26px</td>
-<td>1.6em</td>
-<td>160%</td>
+<td>27px</td>
+<td>1.6875em</td>
+<td>169%</td>
 <td></td>
 </tr>
 <tr>
 <td>22pt</td>
 <td>29px</td>
-<td>1.8em</td>
-<td>180%</td>
+<td>1.8125em</td>
+<td>181%</td>
 <td></td>
 </tr>
 <tr>
@@ -195,8 +195,8 @@ th, td {
 <tr>
 <td>26pt</td>
 <td>35px</td>
-<td>2.2em</td>
-<td>220%</td>
+<td>2.1875em</td>
+<td>219%</td>
 <td></td>
 </tr>
 <tr>
@@ -209,36 +209,36 @@ th, td {
 <tr>
 <td>28pt</td>
 <td>37px</td>
-<td>2.3em</td>
-<td>230%</td>
+<td>2.3125em</td>
+<td>231%</td>
 <td></td>
 </tr>
 <tr>
 <td>29pt</td>
-<td>38px</td>
-<td>2.35em</td>
-<td>235%</td>
+<td>39px</td>
+<td>2.4375em</td>
+<td>244%</td>
 <td></td>
 </tr>
 <tr>
 <td>30pt</td>
 <td>40px</td>
-<td>2.45em</td>
-<td>245%</td>
+<td>2.5em</td>
+<td>25%</td>
 <td></td>
 </tr>
 <tr>
 <td>32pt</td>
-<td>42px</td>
-<td>2.55em</td>
-<td>255%</td>
+<td>43px</td>
+<td>2.6875em</td>
+<td>269%</td>
 <td></td>
 </tr>
 <tr>
 <td>34pt</td>
 <td>45px</td>
-<td>2.75em</td>
-<td>275%</td>
+<td>2.8125em</td>
+<td>281%</td>
 <td></td>
 </tr>
 <tr>
@@ -250,6 +250,8 @@ th, td {
 </tr>
 </tbody>
 </table>
+
+</div>
 
 <!--
 references:
